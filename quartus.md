@@ -1,12 +1,15 @@
 # Quartu Prime 関連
 ## CentOS7
 
-### Guest Addons
+### 共通
 ```
 sudo yum update
 sudo yum groupinstall "Development tools"
 reboot
+```
 
+### Guest Addons(Virtual Boxのみ)
+```
 # CD挿入
 sudo mount /dev/cdrom /mnt
 cd /mnt
@@ -17,6 +20,7 @@ sudo ./VBoxLinuxAdditions.run
 ```
 sudo yum groupinstall "KDE Plasma Workspaces"
 sudo systemctl set-default graphical.target
+sudo reboot
 sudo yum install libpng12 glibc.i686
 sudo yum install libX11-devel.i686 libXext-devel.i686 libXft-devel.i686 ncurses-libs.i686
 ```

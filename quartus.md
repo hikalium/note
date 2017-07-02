@@ -13,6 +13,13 @@ cd /mnt
 sudo ./VBoxLinuxAdditions.run
 
 ```
+### Quartusに必要なパッケージ
+```
+sudo yum groupinstall "KDE Plasma Workspaces"
+sudo systemctl set-default graphical.target
+sudo yum install libpng12 glibc.i686
+sudo yum install libX11-devel.i686 libXext-devel.i686 libXft-devel.i686 ncurses-libs.i686
+```
 
 ## Ubuntu 16.04.2 LTS
 ```

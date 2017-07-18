@@ -43,3 +43,8 @@ sudo apt-get install kubuntu-desktop
 - するとUSB Blaster自体は認識されるようになった。
 - その後すぐにProgrammerを走らせようとすると`Unable to scan device chain`となった。
 - 再起動してもProgrammerを起動しているとしばしばBSoDに出会うように。つらい。
+- 以下のフォーラムを参考に、古いProgrammer(16.1)をインストールしてみた
+  - https://alteraforum.com/forum/showthread.php?t=54887
+- 解決せず。ドライバも古くする必要があるのではないかと考え、古いドライバを削除（ここでまたBSoD）して新しいドライバをインストール。
+- うまくいっていない模様
+

@@ -34,3 +34,7 @@ sudo apt-get install kubuntu-desktop
 何も考えずに展開してsetup.shを叩けばOK
 
 ```
+
+## Windows 8.1 Pro
+- tarを解凍する際、Lhaplusではうまく行かず。7Zipではうまく解凍できた。
+- 解凍したフォルダの`setup.bat`を実行すればよい、インストーラの設定はすべてデフォルト値でOK.

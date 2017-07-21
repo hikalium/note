@@ -47,4 +47,6 @@ sudo apt-get install kubuntu-desktop
   - https://alteraforum.com/forum/showthread.php?t=54887
 - 解決せず。ドライバも古くする必要があるのではないかと考え、古いドライバを削除（ここでまたBSoD）して新しいドライバをインストール。
 - うまくいっていない模様
-
+- 以下を参考にドライバを14.0のものにした。
+  - https://alteraforum.com/forum/showthread.php?t=54887&p=223889#post223889
+- うまく動作した。最新のProgrammerでも動作する。

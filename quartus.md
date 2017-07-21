@@ -39,7 +39,7 @@ sudo apt-get install kubuntu-desktop
 - tarを解凍する際、Lhaplusではうまく行かず。7Zipではうまく解凍できた。
 - 解凍したフォルダの`setup.bat`を実行すればよい、インストーラの設定はすべてデフォルト値でOK.
 - USB Blasterが認識されていなかったので、手動でドライバを更新（デバイスマネージャより）
-  - `C:\intelFPGA_lite\17.0\quartus\drivers\usb-blaster`をドライバのパスとして指定すればOK
+  - `C:\intelFPGA_lite\17.0\quartus\drivers\usb-blaster`をドライバのパスとして指定すればOK
 - するとUSB Blaster自体は認識されるようになった。
 - その後すぐにProgrammerを走らせようとすると`Unable to scan device chain`となった。
 - 再起動してもProgrammerを起動しているとしばしばBSoDに出会うように。つらい。

@@ -18,6 +18,8 @@ sudo fdisk <device>
 
 # ファイルシステムをつくる
 sudo mkfs -t ext4 <device>
+# UUIDをしらべる
+sudo blkid <device> 
 # 自動でマウントされるように設定
 vi /etc/fstab
 ```

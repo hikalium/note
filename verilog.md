@@ -13,3 +13,7 @@ Quartusの場合、指定しないとwarningが出て、0になる。値を指�
 
 ### truncated value with size 32 to ...
 数値リテラルは、ビット数指定なしだと32bitとして解釈されるため、それを用いた演算は32bit幅になる。したがって、大きいビット数のものを小さいところに押し込むからはみ出したところは落ちちゃいますよーという警告。動作は問題ない場合が多いが、ビット数をきちんと指定すべき。
+
+### センシティビティリスト、カンマを使うかorを使うか
+- orとカンマは全く一緒。カンマのほうが新しい(Verilog-2001)。
+- https://www.hdlworks.com/hdl_corner/verilog_ref/items/SensitivityList.htm

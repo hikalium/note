@@ -23,3 +23,10 @@ sudo blkid <device>
 # 自動でマウントされるように設定
 vi /etc/fstab
 ```
+
+## exfat
+```
+sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+sudo yum install exfat-utils
+sudo yum install fuse-exfat
+```

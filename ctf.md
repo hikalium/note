@@ -58,7 +58,7 @@ p/x *(uint64_t *)$rsp
 info proc mappings
 ```
 
-# syscall(64bit)
+## syscall(64bit)
 戻り値はrax
 
 ```
@@ -76,4 +76,15 @@ info proc mappings
  rdi    filename
  rsi    argv
  rdx    envp
+```
+
+## pkcrack
+```
+pkcrack -C <encrypted_zip> -c <known_file_name> -p <known_file> -d <decrypt_out_zip>
+```
+
+## MySQL
+```
+"admin'-- "
+"' union select * from table2 where 'a' = 'a"
 ```

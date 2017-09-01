@@ -6,9 +6,8 @@
 ### OSX
 - 手順に従えばふつうにできた
   - https://chromium.googlesource.com/chromium/src/+/master/docs/mac_build_instructions.md
-- content_shellをstripしようとしたけど場所がわからない
-  - コマンドの出力結果より、以下の場所らしい
-  - `/Users/hikalium/repos/chromium/src/out/Default/Content Shell.app/Contents/MacOS/Content Shell`
+- content_shellをstripしようとしたけど場所がわからなかった
+  - `strip out/Default/Content\ Shell.app/Contents/MacOS/Content\ Shell`
 
 ### Arch Linux
 - Instructionの下の方に、各ディストリビューションの方法が一応書いてある。

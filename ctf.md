@@ -1,8 +1,9 @@
 # ctf memo by hikalium
 
-## xxdでバイナリを吐く
+## バイナリファイルからHexのダンプをつくる
 ```
-echo "41 41 42 43 20 20 20 41 " | xxd -r -p
+hexdump -ve '1/1 "%.2x"' <file>
+xxd -p <file>
 ```
 
 ## xxdでバイナリファイルを作る

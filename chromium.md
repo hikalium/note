@@ -1,4 +1,17 @@
 ## Build Chromium 
+```
+## update repos
+git rebase-update
+gclient sync
+gn gen out/Default
+gn args out/Default
+ninja -C out/Default chrome
+## test
+ninja -C out/Default blink_tests
+(mac) strip out/Default/Content\ Shell.app/Contents/MacOS/Content\ Shell
+python third_party/WebKit/Tools/Scripts/run-webkit-tests -t Default 
+```
+
 ### Common
 - https://chromium.googlesource.com/chromium/src/+/master/tools/gn/docs/quick_start.md
   - `gn args out/<any>`とすると、エディタが立ち上がってビルドパラメータをいじれる

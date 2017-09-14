@@ -2,6 +2,8 @@
 - データ形式：RDDとDataFrameがある
   - RDDは主にScalaで操作する
   - DataFrameは主にSQLから操作する
+    - こっちのほうが高速らしい
+    - https://www.slideshare.net/databricks/dataframes-and-pipelines/11?src=clipshare
 - 両者は相互に変換できる
 
 ```

@@ -44,6 +44,8 @@ python third_party/WebKit/Tools/Scripts/run-webkit-tests -t Default
 
 - 本体のビルドは正常にできた。起動も問題ない。
 - テストが走らない。
-  - Workaroundを発見 -> https://codereview.chromium.org/2740483002/
-  - これも関係ある? -> https://chromium.googlesource.com/chromium/src/+/lkcr/docs/layout_tests_linux.md#pixel-tests
+
+  - Workaroundを発見 -> https://codereview.chromium.org/2740483002/
+
+  - これも関係ある? -> https://chromium.googlesource.com/chromium/src/+/lkcr/docs/layout_tests_linux.md#pixel-tests
   

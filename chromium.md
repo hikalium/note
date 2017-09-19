@@ -48,4 +48,5 @@ python third_party/WebKit/Tools/Scripts/run-webkit-tests -t Default
   - Workaroundを発見 -> https://codereview.chromium.org/2740483002/
 
   - これも関係ある? -> https://chromium.googlesource.com/chromium/src/+/lkcr/docs/layout_tests_linux.md#pixel-tests
-  
+
+    - `37: trusty`を選択(14.04相当)

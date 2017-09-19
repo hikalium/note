@@ -40,6 +40,8 @@ python third_party/WebKit/Tools/Scripts/run-webkit-tests -t Default
   - `--no-sandbox`をつけないと起動しない。
     - `linux-userns`を入れてloaderをいじったがそれでも落ちる。
     
+### Ubuntu 14.04.5 LTS
+- `apt-get install g++-4.8-multilib` をしないと `./build/install-build-deps.sh` が通らない。
 ### Ubuntu 16.04 LTS
 
 - 本体のビルドは正常にできた。起動も問題ない。

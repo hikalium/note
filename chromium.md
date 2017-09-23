@@ -12,6 +12,12 @@ ninja -C out/Default blink_tests
 python third_party/WebKit/Tools/Scripts/run-webkit-tests -t Default 
 ```
 
+```
+enable_nacl=false
+is_debug=false
+remove_webcore_debug_symbols=true
+```
+
 ### Common
 - https://chromium.googlesource.com/chromium/src/+/master/tools/gn/docs/quick_start.md
   - `gn args out/<any>`とすると、エディタが立ち上がってビルドパラメータをいじれる

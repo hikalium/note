@@ -8,3 +8,11 @@
   
 - ソースはこれを落とすのがよさそう
   - ftp://ftp.ics.es.osaka-u.ac.jp/pub/mirrors/UnixArchive/PDP-11/Distributions/research/Dennis_v6/v6src.tar.gz
+
+- カーネルは入っていないので結局ここから見ることになる
+  - http://minnie.tuhs.org/cgi-bin/utree.pl?file=V6/usr/sys
+
+- プログラミングサンプル
+  - http://aiju.de/code/pdp11/programming
+  
+- https://blog.freedom-man.com/unix-v6-1/

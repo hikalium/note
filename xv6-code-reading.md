@@ -2,6 +2,9 @@
 
 - http://simh.trailing-edge.com/
 
+- C Reference Manual
+  - https://www.bell-labs.com/usr/dmr/www/cman.pdf
+
 ## シミュレータ・ディスクイメージ
 - 安定の@orumin氏のサイトが最も役に立つ。
   - http://orumin.blogspot.jp/2014/06/unix-and-2bsd-on-pdp11simh-1.html

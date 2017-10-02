@@ -24,3 +24,5 @@
   - http://doc.cat-v.org/unix/v6/operating-systems-lecture-notes/v6/
 
 - あとは http://orumin.blogspot.jp/2014/06/unix-and-2bsd-on-pdp11simh-1.html を参考に進める
+
+- `STTY -LCASE` を実行すれば、小文字が入力できるようになる。

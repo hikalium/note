@@ -31,5 +31,6 @@
 - `/usr/s2/sh.c`
 
 - edの使い方
+  - http://www.karing.jp/~yoshino/edtips.html
   - https://ja.wikipedia.org/wiki/Ed
   - https://www.gnu.org/software/ed/manual/ed_manual.html

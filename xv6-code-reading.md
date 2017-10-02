@@ -34,3 +34,9 @@
   - http://www.karing.jp/~yoshino/edtips.html
   - https://ja.wikipedia.org/wiki/Ed
   - https://www.gnu.org/software/ed/manual/ed_manual.html
+  
+`ed <filename>` で起動し、Enterを押し下げるごとに行が移動
+`-2` とか `+5` とかすればその行数分移動する
+`c`と入力すればその行を消して、そこに行を挿入するモードになる
+入力が終了したら`.`のみを打ってEnterを押すと、コマンドモードに戻る。
+`w`で書き込み、`q`で終了。

@@ -26,3 +26,10 @@
 - あとは http://orumin.blogspot.jp/2014/06/unix-and-2bsd-on-pdp11simh-1.html を参考に進める
 
 - `STTY -LCASE` を実行すれば、小文字が入力できるようになる。
+
+- `/usr/s1/ed.c`
+- `/usr/s2/sh.c`
+
+- edの使い方
+  - https://ja.wikipedia.org/wiki/Ed
+  - https://www.gnu.org/software/ed/manual/ed_manual.html

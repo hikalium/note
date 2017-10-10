@@ -5,10 +5,10 @@
 interface gigabitEthernet 0/4
 で外向きインターフェイスの設定に入れる。
 
-# このインターフェイスのIPとサブネットマスクを設定
+### このインターフェイスのIPとサブネットマスクを設定
 ip address 192.168.1.1 255.255.255.0
 
-# もしくは、dhcpで取得するよう設定する
+### もしくは、dhcpで取得するよう設定する
 ip address dhcp
 
 show ip dhcp pool
@@ -16,7 +16,7 @@ show interface
 show ip interface
 
 
-# ここが一番参考になりそう。試してみる。
+### ここが一番参考になりそう。試してみる。
 https://www.cisco.com/c/ja_jp/support/docs/ip/ip-addressing-services/dhcp.html
 
 z01(config)#ip dhcp excluded-address 10.10.10.1
@@ -45,12 +45,21 @@ show vlan-switch
 
 
 
-# telnet禁止、内部ipのみssh可
-# vtyの個数はcontext sensitive help (?キー) をみるのがよい
+### telnet禁止、内部ipのみssh可にしたい
+
+- vtyの個数はcontext sensitive help (?キー) をみるのがよい
+
 line vty 0 165
 transport input ssh
 access-class 1 in
 
-これでちゃんと防げた
+- aclは適宜設定すること
+- これでちゃんと防げた
 
+### DNSポートも塞ぎたい
 no ip dns server
+
+
+外に出れなかったのはファイアウォールのせいだった。
+注意しよう。
+

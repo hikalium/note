@@ -24,6 +24,7 @@ sysctl -a | grep machdep.cpu.brand_string
   - brew tap caskroom/cask
   - brew cask install basictex
   - http://web-salad.hateblo.jp/entry/2014/02/03/000000
+  - https://texwiki.texjp.org/?TeX%20Live%2FMac
 - 各種サーバに公開鍵を登録
 - texを入れる（BasicTexでいいかな）
 - スクリーンショットの保存フォルダを変更

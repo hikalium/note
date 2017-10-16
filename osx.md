@@ -20,6 +20,10 @@ sysctl -a | grep machdep.cpu.brand_string
 - Homebrewを入れる
   - tmux
   - reattach-to-user-namespace
+- [brew/cask](https://caskroom.github.io/)
+  - brew tap caskroom/cask
+  - brew cask install basictex
+  - http://web-salad.hateblo.jp/entry/2014/02/03/000000
 - 各種サーバに公開鍵を登録
 - texを入れる（BasicTexでいいかな）
 - スクリーンショットの保存フォルダを変更

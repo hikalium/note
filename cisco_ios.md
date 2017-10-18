@@ -2,8 +2,9 @@
 
 - Cisco 800M Series (4ポート) で検証
 
-interface gigabitEthernet 0/4
+`interface gigabitEthernet 0/4`
 で外向きインターフェイスの設定に入れる。
+`interface range GigabitEthernet 0/0-3` とかすれば、まとめて設定ができる
 
 ### このインターフェイスのIPとサブネットマスクを設定
 ip address 192.168.1.1 255.255.255.0

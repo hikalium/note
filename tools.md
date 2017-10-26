@@ -13,3 +13,9 @@ git checkout -b <local_new_branch> <remote>/<remote_branch>
 sudo screen <device> <baudrate>
 # kill: Ctrl-a k y
 ```
+
+## GhostScript
+### show all fonts available
+```
+echo "(*) {==} 256 string /Font resourceforall" | gs -
+```

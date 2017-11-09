@@ -10,6 +10,10 @@ sw_vers
 sysctl -a | grep machdep.cpu.brand_string
 ```
 
+### NetBIOS名からIPを調べる
+```
+smbutil lookup <NetBIOS name>
+```
 
 
 ## MacOSXの環境構築

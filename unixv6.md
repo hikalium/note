@@ -52,3 +52,20 @@
 
 ### telnetできない件
 `/etc/ttys`を修正する。具体的には、tty0-8が無効化(先頭の数字が0にセット)されていたので、先頭の0を1にすればよい。
+
+
+
+
+# 本の足りないところを埋めて行くメモ
+
+## p.179 「システムコールは間接呼び出しもサポートしています」 -> どういうときに役立つ?
+Lions本より
+```
+Indirect calls have a higher overhead than direct
+system calls. Indirect calls are needed when
+the parameters are data dependent and cannot be
+determined at compile time.
+```
+ということで、「コンパイル時にパラメータが決定できない場合」に使うということらしい。
+
+

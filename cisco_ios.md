@@ -78,6 +78,8 @@ no ip dns server
 注意しよう。
 
 ### dhcpでiPXEブートしたい！
+- https://raphine.wordpress.com/2016/12/14/netboot/
+
 該当するDHCPプールで
 ```
 bootfile http://10.10.10.119:8080/ipxe.conf

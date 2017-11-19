@@ -18,6 +18,12 @@ is_debug=false
 remove_webcore_debug_symbols=true
 ```
 
+## Links
+- https://build.chromium.org/p/chromium/console
+  - 各コミットのテスト状況が見れる？
+
+## Memo
+
 ### Common
 - https://chromium.googlesource.com/chromium/src/+/master/tools/gn/docs/quick_start.md
   - `gn args out/<any>`とすると、エディタが立ち上がってビルドパラメータをいじれる

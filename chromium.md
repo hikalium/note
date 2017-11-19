@@ -19,8 +19,12 @@ remove_webcore_debug_symbols=true
 ```
 
 ## Links
+- [Issues](https://bugs.chromium.org/p/chromium/issues/list)
+  - [Good for first bug, Linux & Mac, Available](https://bugs.chromium.org/p/chromium/issues/list?can=2&q=Hotlist%3DGoodFirstBug+status%3AAvailable+OS%3DLinux%2CMac&colspec=ID+Pri+M+Stars+ReleaseBlock+Component+Status+Owner+Summary+OS+Modified&x=m&y=releaseblock&cells=ids)
 - https://build.chromium.org/p/chromium/console
   - 各コミットのテスト状況が見れる？
+- https://chopsdash.appspot.com/
+  - Chrome開発関連の各種ページの稼働状況が見れる。
 
 ## Memo
 

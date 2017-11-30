@@ -93,6 +93,12 @@ ipxe.conf には、ipxeターミナルで入力するのと同等の記述をし
 dns-server 8.8.8.8
 ```
 
+## static nat
+- 外部から内部へのNAT(外部がGigabitEthernet 0/4, 外部の1234を内部192.168.0.5:5678に転送)
+```
+ip nat inside source static tcp 192.168.0.5 5678 interface GigabitEthernet 0/4 1234
+```
+
 ### 設定の保存
 ```
 write memory

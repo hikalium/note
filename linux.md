@@ -4,3 +4,8 @@
 ```
 ldconfig -v
 ```
+
+## usermod add user to group
+```
+usermod -aG group user
+```

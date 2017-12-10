@@ -218,6 +218,61 @@ https://os.inf.tu-dresden.de/ddekit/dde_rtlws11.pdf
 https://github.com/spotify/linux/blob/master/drivers/uio/uio_pci_generic.c
 
 
+以下のコマンドで割り込みをリアルタイムに確認できる。
+```
+watch -n1 "cat /proc/interrupts"
+```
+
+これを確認したところ、割り込み自体はOSまで届いているようだった。
+ただし、ハンドルされずに増えて止まった（OS側でdisableにされた旨のメッセージがdmesgに記録される。）
+
+
+
 ### リビルドすればなおる？ from Liva
 https://github.com/PFLab-OS/Raph_Kernel_devenv_box/blob/master/uio.sh
+
+
+### 割り込みこない 状況を整理
+
+- mars
+	- 
+
+- qemu(kvm) on mars
+	- `ssh -L 5900:localhost:5900 mars`
+	- xhci_uioは動作
+	- nvme_uioは動作しない
+		- 割り込みが1回も発生しない。
+		- 実行後はコントローラーが死んでしまう(EN=0にはなるが、EN=1にできない) 
+
+- qemu on t03
+	- xhci_uioは動作
+	- nvme_uioは動作しない
+		- 割り込みが1回も発生しない。
+		- 実行後はコントローラーが死んでしまう(EN=0にはなるが、EN=1にできない, CFS=1になっている) 
+
+- virtualbox on t03
+	- nvme_uioは動作しない
+		- 割り込みは発生しており、 `/proc/interrupts` でも確認できるが、それをuioで正しく取れていない。
+		- dmesgでも `irq 22: nobody cared` と表示され、割り込みが無効化されてしまう。
+			- `make restore && make load` すれば割り込みは再度有効になり、プログラムも実行できるが状況は変わらず。
+
+### 可能性をつぶす
+- queueが正しく設定されていない
+	- それはない。以前はそれでバグっていたが修正された。
+	- そもそも、コマンドの送信を行ってからIRQが飛んできていることは確認できている。
+	- したがって、Submission Queueは少なくとも正しい。
+- Completion Queueはどうだろうか？
+
+		
+
+
+
+
+
+
+
+
+
+
+
 

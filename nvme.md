@@ -264,15 +264,22 @@ https://github.com/PFLab-OS/Raph_Kernel_devenv_box/blob/master/uio.sh
 - Completion Queueはどうだろうか？
 
 		
+### QEMUにパッチを当てる
+- 以下の提案に基づく
+  - http://raphine.hatenablog.com/entry/2017/12/09/185844
 
+- `nvme_mmio_write`がBAR領域への書き込みをハンドルしている
+  - `nvme_write_bar` がBARの前半部分(ASQ, ACQのhead, tailまで)の書き込みをチェックしている
+  - `nvme_process_db` が各IO SQ/CQのhead/tailへの書き込みをハンドルしている
 
+-  `pci_irq_assert(pci_dev);`, `pci_irq_deassert(pci_dev);`を適切なタイミングで呼び出すよう変更すべき
 
+- `nvme_create_sq`でSQがつくられる
 
+- `n->num_queues`でqueueの数が制限されている(64を即値でぶち込んでる)
 
-
-
-
-
-
-
+- 割り込み動作の仕様は`7.5.1 Pin Based, Single MSI, and Multiple MSI Behavior`に記述がある。
+  - 内部レジスタ`IS(interrupt status)`
+    - `NvmeCtrl->irq_status`を追加
+  - INTM bits = `n->bar.intms`
 

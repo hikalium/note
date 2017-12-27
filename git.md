@@ -6,12 +6,17 @@ git grep <term>
 ```
 
 ### patch関連
+ユーザー名を変更する必要があるなら変更してコミットを修正
 ```
 git config --global --unset user.name
 git config --global --unset user.email
 git config --local user.name "My Name"
 git config --local user.email "me@example.com"
-git commit --amend --author="my_name <my_name@example.com>"
+git commit --amend --reset-author
+```
+
+コミットをまとめる(nはまとめる個数)
+```
 git rebase -i HEAD~n
 ```
 

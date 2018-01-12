@@ -26,3 +26,8 @@ ControlPersist yes
 ```
 ssh -O stop <hostname>
 ```
+
+### マイク入力の確認
+```
+arecord -l
+```

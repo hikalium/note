@@ -80,12 +80,22 @@ no ip dns server
 ### dhcpでiPXEブートしたい！
 - https://raphine.wordpress.com/2016/12/14/netboot/
 
-該当するDHCPプールで
+該当するDHCPプール(`ip dhcp pool ccp-pool`など)で以下を設定。
 ```
-bootfile http://10.10.10.119:8080/ipxe.conf
+bootfile http://<server ip>:<port>/ipxe.conf
 ```
 
-ipxe.conf には、ipxeターミナルで入力するのと同等の記述をしておけばよい。
+`ipxe.conf` には、ipxeターミナルで入力するのと同等の記述をしておけばよい。
+ただし、最初の行に `#!ipxe` と書いておかないと実行されない。
+
+- `ipxe.conf` sample
+```
+#!ipxe
+dhcp
+kernel http://<server ip>:<port>/memdisk
+initrd http://<server ip>:<port>/disk.img.gz
+boot
+```
 
 ### dhcpで降ってくるDNSアドレスを変更したい！
 該当するDHCPプールで

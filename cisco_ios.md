@@ -7,11 +7,11 @@
 `interface range GigabitEthernet 0/0-3` とかすれば、まとめて設定ができる
 
 ### よくある`no ip domain-lookup`ではない方法でコマンド入力をDNSにかけようとするのを止める
-- `ip domain-lookup`を`no`にすると、すべての解決が止まってしまってこまる。
-  - 私の場合、DDNSのアクセス先ドメインを解決できなくて困った。
-  - `HTTPDNSUPD: Sending request... status='Host name resolution failed', tid=0`
-  - pingとかも解決してくれなくなる。これは困る。
-  - `ip domain-lookup`を有効にすれば、正しく解決できるようになった。
+`ip domain-lookup`を`no`にすると、すべての解決が止まってしまってこまる。
+私の場合、DDNSのアクセス先ドメインを解決できなくて困った。
+`HTTPDNSUPD: Sending request... status='Host name resolution failed', tid=0`と出てしまう。
+pingとかも解決してくれなくなる。これは困る。
+`ip domain-lookup`を有効にすれば、正しく解決できるようになった。
 - Solution 2 of http://etherealmind.com/cisco-ios-translating-domain-server/
 - http://blog.livedoor.jp/tokyo_z/archives/51247251.html
 

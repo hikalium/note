@@ -23,3 +23,5 @@ git rebase -i HEAD~n
 ### email
 - http://d.hatena.ne.jp/fixme/20110212/1297564806
 
+### https password
+https://qiita.com/usamik26/items/c655abcaeee02ea59695

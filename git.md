@@ -25,3 +25,8 @@ git rebase -i HEAD~n
 
 ### https password
 https://qiita.com/usamik26/items/c655abcaeee02ea59695
+
+```
+git config --global credential.helper 'cache --timeout=3600' # 1h
+git config --global credential.helper 'cache --timeout=86400' # 1d
+```

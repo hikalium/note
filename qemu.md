@@ -3,6 +3,7 @@ https://bugs.launchpad.net/qemu/
 
 ```
 ./configure --target-list=x86_64-softmmu
+# for debugging: ./configure --target-list=x86_64-softmmu --enable-debug --enable-sanitizers
 make
 sudo make install
 ```

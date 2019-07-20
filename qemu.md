@@ -1,4 +1,5 @@
 https://wiki.qemu.org/Contribute/SubmitAPatch
+https://bugs.launchpad.net/qemu/
 
 ```
 ./configure --target-list=x86_64-softmmu

@@ -15,6 +15,13 @@ sysctl -a | grep machdep.cpu.brand_string
 smbutil lookup <NetBIOS name>
 ```
 
+### rmをゴミ箱移動に変更する
+https://qiita.com/icedpasta1832/items/695590b67440347d5fde
+```
+brew install rmtrash
+alias rm='rmtrash'
+```
+
 
 ## MacOSXの環境構築
 - Chromeを入れる(Chromiumにする？)

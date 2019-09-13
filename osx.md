@@ -15,6 +15,21 @@ sysctl -a | grep machdep.cpu.brand_string
 smbutil lookup <NetBIOS name>
 ```
 
+## ホスト名を設定する
+- ComputerName
+  - The user-friendly name for the system
+- HostName
+  - The name associated with hostname(1) and gethostname(3)
+- LocalHostName
+  - The local (Bonjour) host name
+
+```
+sudo scutil --set ComputerName txx.z01.hikalium.com
+sudo scutil --set HostName txx.z01.hikalium.com
+sudo scutil --set LocalHostName txx
+```
+
+
 ### rmをゴミ箱移動に変更する
 https://qiita.com/icedpasta1832/items/695590b67440347d5fde
 ```

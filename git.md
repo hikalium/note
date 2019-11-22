@@ -3,6 +3,8 @@
 git checkout -b other_branch origin/other_branch
 git ls-files
 git grep <term>
+# addした変更だけを見たい時
+git diff --staged
 ```
 
 ### patch関連

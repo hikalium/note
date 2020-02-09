@@ -39,5 +39,7 @@ git send-email --smtp-debug=1 --to qemu-devel@nongnu.org 0001-x.patch
 ```
 
 ## commits
+- https://github.com/qemu/qemu/search?q=hikaru&type=Commits
+
 - https://github.com/qemu/qemu/commit/d5dbde4645fe56a1bcd678f85fa26c5548bcf552
 - https://github.com/qemu/qemu/commit/5e9aa92eb1a5abbb6e0e3dafdf64ac728e11b6f2

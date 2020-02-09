@@ -13,9 +13,14 @@ sudo make install
 git config diff.renames true
 git config diff.algorithm patience
 git config sendemail.cccmd 'scripts/get_maintainer.pl --nogit-fallback'
+
+sudo -H cpan -f Net::SMTP::SSL
+sudo -H cpan -f IO::Socket::SSL
 ```
 
 https://git-scm.com/docs/git-send-email#_use_gmail_as_the_smtp_server
+
+https://gist.github.com/relaxdiego/be7b87cae8c2d51d5ee4
 
 ### make patch
 ```

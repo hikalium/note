@@ -17,3 +17,12 @@ sudo systemctl restart zabbix-agent.service
 # on zabbix server
 zabbix_get -s <host> -k "system.uptime"
 ```
+
+## Give permission to run a command with sudo from zabbix
+
+```
+sudo EDITOR=vim visudo
+
+Defaults:zabbix    !requiretty
+zabbix  ALL=NOPASSWD: /usr/bin/ipmctl
+```

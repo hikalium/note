@@ -1,4 +1,10 @@
 ## Mac OSX
+### Install basic tools
+```
+xcode-select --install
+# ウィンドウが開くのでインストールを選ぶ
+```
+
 ### スクリーンショットを特定フォルダに保存する
 ```
 defaults write com.apple.screencapture location ~/Desktop/SS

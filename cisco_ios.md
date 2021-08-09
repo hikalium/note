@@ -2,9 +2,25 @@
 
 - Cisco 800M Series (4ポート) で検証
 
-`interface gigabitEthernet 0/4`で外向きインターフェイスの設定に入れる。
+`interface gigabitEthernet 0/4`を外向きのinterfaceに使っている。
 
 `interface range GigabitEthernet 0/0-3` とかすれば、まとめて設定ができる
+
+### よくある`no ip domain-lookup`ではない方法でコマンド入力をDNSにかけようとするのを止める
+`ip domain-lookup`を`no`にすると、すべての解決が止まってしまってこまる。
+私の場合、DDNSのアクセス先ドメインを解決できなくて困った。
+`HTTPDNSUPD: Sending request... status='Host name resolution failed', tid=0`と出てしまう。
+pingとかも解決してくれなくなる。これは困る。
+`ip domain-lookup`を有効にすれば、正しく解決できるようになった。
+- Solution 2 of http://etherealmind.com/cisco-ios-translating-domain-server/
+- http://blog.livedoor.jp/tokyo_z/archives/51247251.html
+
+つまりは、全部のlineに対して`transport preferred none`とすればよい。
+```
+ip domain-lookup
+line vty 0 165
+transport preferred none
+```
 
 ### インターフェイスのIPとサブネットマスクを設定
 ```
@@ -80,12 +96,22 @@ no ip dns server
 ### dhcpでiPXEブートしたい！
 - https://raphine.wordpress.com/2016/12/14/netboot/
 
-該当するDHCPプールで
+該当するDHCPプール(`ip dhcp pool ccp-pool`など)で以下を設定。
 ```
-bootfile http://10.10.10.119:8080/ipxe.conf
+bootfile http://<server ip>:<port>/ipxe.conf
 ```
 
-ipxe.conf には、ipxeターミナルで入力するのと同等の記述をしておけばよい。
+`ipxe.conf` には、ipxeターミナルで入力するのと同等の記述をしておけばよい。
+ただし、最初の行に `#!ipxe` と書いておかないと実行されない。
+
+- `ipxe.conf` sample
+```
+#!ipxe
+dhcp
+kernel http://<server ip>:<port>/memdisk
+initrd http://<server ip>:<port>/disk.img.gz
+boot
+```
 
 ### dhcpで降ってくるDNSアドレスを変更したい！
 該当するDHCPプールで

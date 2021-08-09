@@ -149,6 +149,13 @@ QueueのHeadとTailがどこを指すべきかは
   - 空きスロット = SQyTDBLの値
 
 ### Identify command
+NVMサブシステム or controller or namespace の情報を返してくれる。
+戻ってくるデータは4096バイト。なのでPRP1にはPRPエントリを指定する。
+
+どの情報を返すかは、CNSの値で決まる
+- 0x01: Identify Controller data structureを返す
+  - Figure 109: Identify – Identify Controller Data Structure
+
 CDW0.OPC
 CDW0.FUSE
 CDW0.CID = テキトーに（今回はシリアルな番号を振った）
@@ -161,6 +168,7 @@ PRP2
 
 Figure 108: Identify – Command Dword 10
 これもつかうって！
+
 
 
 ### PRP Entry / List

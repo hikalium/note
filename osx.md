@@ -1,4 +1,11 @@
 ## Mac OSX
+
+### Reboot without preboot auth when filevault is set
+
+```
+sudo fdesetup authrestart
+```
+
 ### Install basic tools
 ```
 xcode-select --install

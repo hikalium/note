@@ -15,8 +15,24 @@ ls /var/cache/distfiles/
 ```
 
 ```
-sys-apps/pcsc-tools
+dev-libs/protobuf
+dev-util/wayland-scanner
+gst-plugins-base
+gui-libs/wlroots
+info
+lsusb
+net-misc/ntp
+ntpd
 opensc
+protoc
+rtcwake
+rust
+rustup
+scdaemon
+sys-apps/lssbus
+sys-apps/usbutils
+sys-fs/dosfstools
 usbutils
-
+wayland-protocols
+xdg-shell
 ```

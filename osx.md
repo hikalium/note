@@ -1,5 +1,10 @@
 ## Mac OSX
 
+### radio signals
+```
+sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport -s
+```
+
 ### Reboot without preboot auth when filevault is set
 
 ```

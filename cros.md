@@ -1,5 +1,8 @@
 # ChromiumOS hacking note (from publically available information)
 
+## ARM Fuzzing board is using kexec
+https://source.chromium.org/chromiumos/chromiumos/codesearch/+/main:src/overlays/overlay-amd64-generic-koosh/README.md;drc=a01ca05e20b74fea753182f8328382c043d6f14c
+
 ## CodeSearch
 https://source.chromium.org/chromiumos
 

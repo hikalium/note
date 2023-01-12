@@ -1,5 +1,8 @@
 # ChromiumOS hacking note (from publically available information)
 
+## CodeSearch
+https://source.chromium.org/chromiumos
+
 ## download official recovery images
 source: https://groups.google.com/a/chromium.org/g/chromium-os-discuss/c/OcB4zaIWwok
 ```

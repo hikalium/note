@@ -16,6 +16,6 @@ gdb minimal_linux_elf_00.bin \
   -ex 'set pagination off' \
   -ex 'info target' \
   -ex 'set confirm off' \
-  -ex 'quit \
+  -ex 'quit' \
 | grep '.text'
 ```

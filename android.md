@@ -3,6 +3,7 @@ Build an android app without Android Studio (2023-04-17, macOS)
 ```
 # https://android.googlesource.com/platform/packages/apps/Benchmark/ 
 # https://zenn.dev/110416/articles/0945183fe53740 
+# https://authmane512.medium.com/how-to-build-an-apk-from-command-line-without-ide-7260e1e22676
 # download java
 mkdir -p ~/android
 cd ~/android

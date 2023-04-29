@@ -1,5 +1,14 @@
 # gentoo commands
 
+## daily update
+https://wiki.gentoo.org/wiki/Upgrading_Gentoo
+```
+sudo emaint --auto sync
+sudo emerge --ask --verbose --update --deep --newuse @world
+```
+
+## misc
+
 ```
 emerge --sync # sync to latest
 emerge-webrsync # sync to snapshot

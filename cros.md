@@ -1,6 +1,9 @@
 # ChromiumOS hacking note (from publically available information)
 
-## Install Authy Desktop Linux
+## Install Authy Desktop for Linux!
+
+[Screenshot 2023-04-30 22 36 23](https://user-images.githubusercontent.com/10512779/235356396-30449e9c-971a-47ce-9913-599b6a78439f.png)
+
 ```
 # on Crostini (the Linux environment on ChromeOS)
 
@@ -34,6 +37,7 @@ sommelier -X authy
 xhost + && authy
 
 # enjoy!
+# verified on: 15428.0.0 (Official Build) dev-channel brya
 ```
 
 ## ARM Fuzzing board is using kexec

@@ -1,6 +1,6 @@
 # ChromiumOS hacking note (from publically available information)
 
-# Install Authy Desktop Linux
+## Install Authy Desktop Linux
 ```
 # on Crostini (the Linux environment on ChromeOS)
 

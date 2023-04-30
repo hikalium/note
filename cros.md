@@ -3,24 +3,37 @@
 # Install Authy Desktop Linux
 ```
 # on Crostini (the Linux environment on ChromeOS)
+
 sudo apt install snapd squashfuse
+
 # squashfuse is needed to fix the following error:
 # $ sudo snap install authy
 # error: system does not fully support snapd: cannot mount squashfs image using "squashfs": mount:
 #        /tmp/sanity-mountpoint-294195823: mount failed: Operation not permitted.
+
 sudo snap install authy
+
 # in my case, the first attempt is failed with:
 # error: cannot perform the following tasks:
 # - Setup snap "snapd" (18933) security profiles (cannot run udev triggers: exit status 1
 # udev output:
 # Failed to write 'change' to '/sys/devices/LNXSYSTM:00/uevent': Permission denied
 # but running exactly the same command somehow solved the issue
+
 sudo snap install authy
+
 # 2023-04-30T22:23:56+09:00 INFO Waiting for automatic snapd restart...
 # authy 2.3.0 from Twilio Authy installed
+
 # Now, let's start it with sommelier (pre-installed wayland compositor with X forwarding support)
 # c.f. https://chromium.googlesource.com/chromiumos/platform2/+/HEAD/vm_tools/sommelier/README.md
+# xhost + can also be used (as Twilio suport suggested)
+
 sommelier -X authy
+# or
+xhost + && authy
+
+# enjoy!
 ```
 
 ## ARM Fuzzing board is using kexec

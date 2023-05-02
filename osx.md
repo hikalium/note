@@ -1,5 +1,11 @@
 ## Mac OSX
 
+### software update via ssh
+
+```
+softwareupdate --install --all
+```
+
 ### radio signals
 ```
 sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport -s

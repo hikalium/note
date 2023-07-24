@@ -3,6 +3,9 @@
 ## random
 ```
 ./update_kernel.sh --remote 10.10.10.45 --arch x86_64 --remote_bootargs --device sda --partition /dev/sda2 --vboot --nosyslinux
+
+crossystem dev_default_boot=usb
+crossystem dev_default_boot=disk
 ```
 
 ## EC / Servo commands

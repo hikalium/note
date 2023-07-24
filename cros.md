@@ -1,5 +1,34 @@
 # ChromiumOS hacking note (from publically available information)
 
+## EC / Servo commands
+
+### Servo
+
+There are three channels:
+- Servo EC Shell
+- DUT UART
+- Atmega UART
+
+https://source.chromium.org/chromiumos/chromiumos/codesearch/+/main:src/platform/release-firmware/fpmcu-bloonchipper/board/servo_v4p1/board.c;l=476-478;drc=1d44b153dcae4320bd3d815d06d2f8082e9a48eb
+
+#### Servo EC Shell
+- macaddr
+- ioexget
+- ioexset
+
+#### Servo ioext
+- ioexget
+- ioexset
+
+```
+# reset ETH
+ioexset EN_PP3300_ETH 0
+ioexset EN_PP3300_ETH 1
+```
+https://source.chromium.org/chromiumos/chromiumos/codesearch/+/main:src/platform/release-firmware/fpmcu-nami/board/servo_v4p1/ioexpanders.h;l=159-167;drc=71b2ef709dcb14260f5fdaa3ab4ced005a29fb46
+
+
+
 ## Install Authy Desktop for Linux!
 
 ![Screenshot 2023-04-30 22 36 23](https://user-images.githubusercontent.com/10512779/235356396-30449e9c-971a-47ce-9913-599b6a78439f.png)

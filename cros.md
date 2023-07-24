@@ -20,6 +20,10 @@ https://source.chromium.org/chromiumos/chromiumos/codesearch/+/main:src/platform
 - ioexget
 - ioexset
 
+via this command, we can toggle things on Servo.
+
+https://source.chromium.org/chromiumos/chromiumos/codesearch/+/main:src/platform/release-firmware/fpmcu-nami/board/servo_v4p1/ioexpanders.h
+
 ```
 # reset ETH
 ioexset EN_PP3300_ETH 0

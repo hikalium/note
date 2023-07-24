@@ -6,6 +6,34 @@
 
 crossystem dev_default_boot=usb
 crossystem dev_default_boot=disk
+
+# IO port tweak
+# https://people.redhat.com/rjones/ioport/
+
+# hatch / akemi
+# https://www.intel.com/content/dam/www/public/us/en/documents/datasheets/9-series-chipset-pch-datasheet.pdf
+# 12.7.1 NMI_SC - NMI Status and Control Register
+./port --read --size 1 0x61
+# 52 = 0101_0010
+# 36 = 0011_0110
+./port --write --size 1 0x61 3 # beep on
+./port --write --size 1 0x61 0 # beep off
+
+# 12.3.1 TCW - Timer Control Word Register
+# Write Only
+./port --write --size 1 0x43 0xb6 # 0b1011_011_0, counter 2, counter write LSB then MSB, square wave, binary counter
+./port --write --size 1 0x42 0x20   # PIT beep counter LSB
+./port --write --size 1 0x42 0x00   # PIT beep counter MSB
+
+./port --read --size 1 0x42   # PIT beep counter read
+
+
+# 12.7.5 RST_CNT - Reset Control Register
+./port --write --size 1 0xcf9 14    # reset the machine
+
+# https://source.chromium.org/chromiumos/chromiumos/codesearch/+/main:src/platform/depthcharge/src/board/hatch/board.c;l=134?q=hatch%20beep&ss=chromiumos%2Fchromiumos%2Fcodesearch:src%2F
+# 
+
 ```
 
 ## EC / Servo commands

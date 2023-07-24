@@ -1,5 +1,10 @@
 # ChromiumOS hacking note (from publically available information)
 
+## random
+```
+./update_kernel.sh --remote 10.10.10.45 --arch x86_64 --remote_bootargs --device sda --partition /dev/sda2 --vboot --nosyslinux
+```
+
 ## EC / Servo commands
 
 ### Servo

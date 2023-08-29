@@ -1,5 +1,12 @@
 # ChromiumOS hacking note (from publically available information)
 
+## Compatibility
+### Hardware
+#### Apple Pro Display XDR
+- monitor_info: ProDisplayXDR : Manufacturer: APP - Product ID: AE2D - Year of Manufacture: 2019
+- Worked with felwinter (ASUS Chromebook Flip CX5(CX5601), ASUS Chromebook Enterprise Flip CX5(CX5601)) @ 15474.84.0 (Official Build) stable-channel brya
+- Did NOT work with duffy (ASUS Chromebox 4) @ 15474.84.0 (Official Build) stable-channel puff
+
 ## random
 ```
 ./update_kernel.sh --remote 10.10.10.45 --arch x86_64 --remote_bootargs --device sda --partition /dev/sda2 --vboot --nosyslinux

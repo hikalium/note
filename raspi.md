@@ -23,7 +23,11 @@ Device     Boot  Start     End Sectors  Size Id Type
 
 $ TMPDIR=`mktemp -d`
 $ sudo mount /dev/sdd1 ${TMPDIR}
-$ sudo touch ${TMPDIR}/ssh
+
+# Set ${YOUR_PASS} here
+$ PASS_HASH=`echo "${YOUR_PASS}" | openssl passwd -6 -stdin`
+$ sudo bash -c "echo ${USER}:${PASS_HASH} | tee ${TMPDIR}/userconf"
+# redacted
 
 $ ls ${TMPDIR}
 bcm2708-rpi-b.dtb       bcm2710-rpi-2-b.dtb       bcm2711-rpi-cm4.dtb     fixup4.dat    kernel7.img       start4db.elf

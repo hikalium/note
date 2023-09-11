@@ -28,17 +28,6 @@ $ sudo mount /dev/sdd1 ${TMPDIR}
 $ PASS_HASH=`echo "${YOUR_PASS}" | openssl passwd -6 -stdin`
 $ sudo bash -c "echo ${USER}:${PASS_HASH} | tee ${TMPDIR}/userconf"
 # redacted
-
-$ ls ${TMPDIR}
-bcm2708-rpi-b.dtb       bcm2710-rpi-2-b.dtb       bcm2711-rpi-cm4.dtb     fixup4.dat    kernel7.img       start4db.elf
-bcm2708-rpi-b-plus.dtb  bcm2710-rpi-3-b.dtb       bcm2711-rpi-cm4-io.dtb  fixup4db.dat  kernel7l.img      start4.elf
-bcm2708-rpi-b-rev1.dtb  bcm2710-rpi-3-b-plus.dtb  bcm2711-rpi-cm4s.dtb    fixup4x.dat   kernel8.img       start4x.elf
-bcm2708-rpi-cm.dtb      bcm2710-rpi-cm3.dtb       bootcode.bin            fixup_cd.dat  kernel.img        start_cd.elf
-bcm2708-rpi-zero.dtb    bcm2710-rpi-zero-2.dtb    cmdline.txt             fixup.dat     LICENCE.broadcom  start_db.elf
-bcm2708-rpi-zero-w.dtb  bcm2710-rpi-zero-2-w.dtb  config.txt              fixup_db.dat  overlays          start.elf
-bcm2709-rpi-2-b.dtb     bcm2711-rpi-400.dtb       COPYING.linux           fixup_x.dat   ssh               start_x.elf
-bcm2709-rpi-cm2.dtb     bcm2711-rpi-4-b.dtb       fixup4cd.dat            issue.txt     start4cd.elf
-
 $ sudo umount ${TMPDIR}
 $ sync
 ```

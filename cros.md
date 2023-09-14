@@ -1,5 +1,9 @@
 # ChromiumOS hacking note (from publically available information)
 
+## API key
+
+https://www.chromium.org/developers/how-tos/api-keys/#providing-keys-at-runtime
+
 ## gbb flags
 ```
 # futility gbb --get --flash --flags 2>/dev/null

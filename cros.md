@@ -1,5 +1,11 @@
 # ChromiumOS hacking note (from publically available information)
 
+## gbb flags
+```
+# futility gbb --get --flash --flags 2>/dev/null
+flags: 0x00000000
+```
+
 ## Compatibility
 ### Hardware
 #### Apple Pro Display XDR

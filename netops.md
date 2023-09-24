@@ -1,5 +1,14 @@
 # network operations
 
+## netplan
+```
+sudo netplan get
+sudo vi /etc/netplan/*.yaml
+sudo netplan generate
+sudo netplan apply
+dig misskey.hikalium.dev
+```
+
 ## NEC IX
 
 ```

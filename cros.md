@@ -1,5 +1,10 @@
 # ChromiumOS hacking note (from publically available information)
 
+## open a file in a browser from Crostini
+```
+garcon-url-handler <path_to_file>
+```
+
 ## API key
 
 https://www.chromium.org/developers/how-tos/api-keys/#providing-keys-at-runtime

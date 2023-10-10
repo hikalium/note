@@ -1,5 +1,20 @@
 # raspi
 
+## Get GPU temp
+```
+$ vcgencmd measure_temp --help
+temp=40.1'C
+```
+
+## Get CPU temp
+```
+$ cat /sys/class/thermal/thermal_zone0/type 
+cpu-thermal
+
+$ cat /sys/class/thermal/thermal_zone0/temp
+39546
+```
+
 ## burn SD card
 ```
 sudo dd if=2023-05-03-raspios-bullseye-armhf-lite.img of=/dev/sdd bs=2048 status=progress

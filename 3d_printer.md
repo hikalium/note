@@ -34,7 +34,17 @@ Z Axis Accuracy: 0.00125mm
 XY Resolution: 0.05mm(1620*2560)
 Build Volume: 5.08in(L)*3.15in(W)*6.30in(H) 129mm(L)*80mm(W)*160mm(H)
 Light Source: UV Integrated Light (wavelength 405nm)
-Printer Dimensions: 7.87in (L)*7.87in (W)*16.14in (H) / 20cm (L)*20cm (W)*41cm (H)```
+Printer Dimensions: 7.87in (L)*7.87in (W)*16.14in (H) / 20cm (L)*20cm (W)*41cm (H)
+```
+
+## Slicer setup
+
+```
+# on crostini
+mkdir ~/bin
+cd ~/bin
+wget https://github.com/Ultimaker/Cura/releases/download/5.4.0/UltiMaker-Cura-5.4.0-linux.AppImage
+chmod 755 UltiMaker-Cura-5.4.0-linux.AppImage
 ```
 
 ## Useful 3rd-party models

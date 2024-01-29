@@ -22,6 +22,10 @@ network:
       dhcp4: true
       addresses:
         - "A.B.C.D/24"
+    wireless:
+      match:
+        name: "w*"
+      optional: true
 sudo chmod 600 /etc/netplan/*.yaml
 sudo chown root:root /etc/netplan/*.yaml
 sudo netplan try --timeout 10

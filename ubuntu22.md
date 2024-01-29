@@ -27,6 +27,11 @@ network:
   version: 2
 ```
 
+See also: [netops.md](netops.md)
+
 ```
-sudo netplan try --timeout 10
+# update timezone
+sudo dpkg-reconfigure tzdata
+# check bottleneck of the boottime
+sudo systemd-analyze blame
 ```

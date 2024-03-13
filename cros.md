@@ -152,6 +152,10 @@ wget $IMAGE_ZIP_URL
       'https://dl.google.com/dl/edgedl/chromeos/recovery/cloudready_recovery2.json'
 ```
 
+## download chromeos flex latest usb stick image
+- https://dl.google.com/chromeos-flex/images/latest.bin.zip
+- source: https://support.google.com/chromeosflex/answer/11541904
+
 # crosh help_advanced
 
 

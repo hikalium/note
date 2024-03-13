@@ -146,6 +146,12 @@ echo $IMAGE_ZIP_URL
 wget $IMAGE_ZIP_URL
 ```
 
+```
+# URLs extracted from the recovery utility
+      'https://dl.google.com/dl/edgedl/chromeos/recovery/recovery2.json',
+      'https://dl.google.com/dl/edgedl/chromeos/recovery/cloudready_recovery2.json'
+```
+
 # crosh help_advanced
 
 

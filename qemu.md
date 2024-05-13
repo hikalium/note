@@ -2,9 +2,14 @@ https://wiki.qemu.org/Contribute/SubmitAPatch
 https://bugs.launchpad.net/qemu/
 
 ```
+# for crostini
+sudo apt install -y ninja-build pkg-config libglib2.0-dev build-essential libgtk-3-dev libslirp-dev python3-venv
+./configure --target-list=x86_64-softmmu --enable-gtk --enable-slirp
+
+# build
 ./configure --target-list=x86_64-softmmu
 # for debugging: ./configure --target-list=x86_64-softmmu --enable-debug --enable-sanitizers
-make
+make -j`nproc`
 sudo make install
 ```
 

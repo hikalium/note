@@ -16,3 +16,8 @@ sudo emerge v4l-utils
 # list devices
 
 ```
+
+## convert
+```
+ffmpeg -i from.webm to.mp4
+```

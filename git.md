@@ -1,10 +1,17 @@
 ## git
+
+### misc
 ```
 git checkout -b other_branch origin/other_branch
 git ls-files
 git grep <term>
 # addした変更だけを見たい時
 git diff --staged
+```
+
+### 各コミットにまとめてテストを走らせる
+```
+git rebase HEAD~~ --exec "git show --oneline -s HEAD | grep SKIP_TEST: || cargo test"
 ```
 
 ### patch関連

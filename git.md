@@ -12,6 +12,8 @@ git diff --staged
 ### 各コミットにまとめてテストを走らせる
 ```
 git rebase HEAD~~ --exec "git show --oneline -s HEAD | grep SKIP_TEST: || cargo test"
+
+git rebase --root --exec "git show --oneline -s HEAD | grep SKIP_TEST: || cargo test"
 ```
 
 ### patch関連

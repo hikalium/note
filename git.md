@@ -9,6 +9,12 @@ git grep <term>
 git diff --staged
 ```
 
+### fixup & autosquash
+```
+git config rebase.autoSquash true
+git rebase --root -i
+```
+
 ### 各コミットにまとめてテストを走らせる
 ```
 git rebase HEAD~~ --exec "git show --oneline -s HEAD | grep SKIP_TEST: || cargo test"

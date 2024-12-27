@@ -1,5 +1,10 @@
 # ChromiumOS hacking note (from publically available information)
 
+## random html from Crostini
+```
+$ /opt/google/cros-containers/bin/garcon --client --url 'data:text/html,<script>window.location.href="https://hikalium.com"</script>'
+```
+
 ## open a file in a browser from Crostini
 ```
 garcon-url-handler <path_to_file>

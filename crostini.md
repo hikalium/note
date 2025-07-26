@@ -8,6 +8,10 @@
 $ cat /opt/google/cros-containers/etc/lsb-release | grep _DESC
 CHROMEOS_RELEASE_DESCRIPTION=16266.0.0 (Official Build) dev-channel tatl test
 
+# Blender 2.79b
+$ wget https://download.blender.org/release/Blender2.79/blender-2.79b-linux-glibc219-x86_64.tar.bz2
+# -> worked, interactable, .3ds import and stl export worked.
+
 # Blender 4.5 LTS
 $ wget https://download.blender.org/release/Blender4.5/blender-4.5.0-linux-x64.tar.xz
 # -> can be launched but could not be interacted (no click recognized)
@@ -17,9 +21,6 @@ $ wget https://download.blender.org/release/Blender4.2/blender-4.2.12-linux-x64.
 # -> can be launched but could not be interacted (no click recognized)
 
 
-```
-
-```
 
 ```
 

@@ -1,5 +1,9 @@
 # 3D Printer tips
 
+## expected / actual size
+
+X1C -> +0~0.2mm?
+
 ## Printers @ hikalium lab
 
 ### [FDM] Anycubic Mega X

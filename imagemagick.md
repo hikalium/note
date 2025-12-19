@@ -8,6 +8,9 @@ convert 250607.pdf 250607-%03d.png
 
 # Use this instead:
 gs -dSAFER -r300 -sDEVICE=pngalpha -o '250607-p%03d.png' 250607.pdf
+
+# Or, with white background:
+gs -dSAFER -r300 -sDEVICE=png16m -o 20251214_L7oy-%03d.png 20251214_L7oy.pdf
 ```
 
 # ref

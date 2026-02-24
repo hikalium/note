@@ -2,9 +2,9 @@ https://wiki.qemu.org/Contribute/SubmitAPatch
 https://bugs.launchpad.net/qemu/
 
 ```
-sudo apt install -y ninja-build pkg-config libglib2.0-dev build-essential libgtk-3-dev libslirp-dev python3-venv libgcrypt20-dev
+sudo apt install -y ninja-build pkg-config libglib2.0-dev build-essential libgtk-3-dev libslirp-dev python3-venv libgcrypt20-dev libgnutls28-dev
 
-./configure --target-list=x86_64-softmmu --enable-gtk --enable-slirp --enable-gcrypt
+./configure --target-list=x86_64-softmmu --enable-gtk --enable-slirp --enable-gcrypt --enable-gnutls
 
 make -j
 

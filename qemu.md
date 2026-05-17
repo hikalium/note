@@ -1,6 +1,8 @@
 https://wiki.qemu.org/Contribute/SubmitAPatch
 https://bugs.launchpad.net/qemu/
 
+QEMU で実機を模す側の罠メモは [qemu-device.md](./qemu-device.md)。
+
 ```
 sudo apt install -y ninja-build pkg-config libglib2.0-dev build-essential libgtk-3-dev libslirp-dev python3-venv libgcrypt20-dev libgnutls28-dev
 

@@ -10,3 +10,7 @@ sudo sed -i.bak -E \
 ```
 
 - [Ubuntuの日本国内向けapt mirror設定2026](https://zenn.dev/ciffelia/articles/c394962a8f188a)
+
+```
+sudo apt install prometheus-node-exporter -y && sudo systemctl enable --now prometheus-node-exporter
+```
